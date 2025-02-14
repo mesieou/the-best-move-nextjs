@@ -9,18 +9,18 @@ export default function Header() {
                 <Link href="/">
                     <Image src={logo} className='logo' alt="The Best Move logo"/>  
                 </Link>
-                <ul className='flex space-x-4'>
+                <ul className='flex space-x-20'>
                     <li>
-                        <Link href="/services">Services</Link>
+                        <Link className="font-bold" href="/services">Services</Link>
                     </li>
                     <li>
-                        <Link href="/pricing">Pricing</Link>
+                        <Link className="font-bold" href="/pricing">Pricing</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link className="font-bold" href="/contact">Contact</Link>
                     </li>
                 </ul>
-                <button>Quote Now</button>
+                <button className='primary-button'>Quote Now</button>
             </nav>
         </div>
     )

@@ -36,3 +36,20 @@ body {
 .logo:hover {
   filter: drop-shadow(0 0 2em var(--primary-color-light));
 }
+
+.primary-button {
+  border-radius: 12px;
+  padding: 1em 1.5em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  color: white;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border-style: none;
+}
+.primary-button:hover {
+  background: var(--secondary-color);
+  transition: 0.2s;
+}
