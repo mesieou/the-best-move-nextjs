@@ -4,22 +4,24 @@ import Image from 'next/image';
 
 export default function PricingSection() {
     return (
-        <section>
-            <h1>Simple pricing</h1>
-            <h2 className="no-space-h3">No hidden fees. No surprises</h2>
-            <p>Pay only for the time we spend moving your belongings. Time starts and end at our depot in Blackburn South</p>
-            <div className="pricing-cards">
-                <div className="card-hourly-rate">
-                    <h3 className="h3-centered">One Removalist</h3>
-                    <Image src={oneRemovalist} alt="cheap house removalist packing a house in Melbourne"/>
-                    <h1 className="hourly-rate">$95/hour</h1>
-                    <p className="title-pricing-text">It might require assistance from your at pick up and drop off locations</p>
+        <section className="min-h-screen grid grid-flow-col gap-4">
+            <div className="title-pricing col-span-2 flex flex-col justify-center">
+                <h1>Simple pricing</h1>
+                <h2 className="no-space-h3">No hidden fees. No surprises</h2>
+                <p>Pay only for the time we spend moving your belongings. Time starts and end at our depot in Blackburn South</p>
+            </div>
+            <div className="pricing-cards flex flex-col gap-8">
+                <div className="card-hourly-rate-blue">
+                    <h3 className="text-center">One Removalist</h3>
+                    <Image className="h-56" src={oneRemovalist} alt="cheap house removalist packing a house in Melbourne"/>
+                    <h1 className="text-center">$95/hour</h1>
+                    <p className="text-center">It might require assistance from your at pick up and drop off locations</p>
                 </div>
-                <div className="card-hourly-rate">
-                    <h3 className="h3-centered">Two Removalists</h3>
-                    <Image src={twoRemovalists} alt="best high-quality Melbourne removalists doing a same-day job"/>
-                    <h1 className="hourly-rate">$145/hour</h1>
-                    <p className="title-pricing-text">Enjoy from a full hands-off removalist experience</p>
+                <div className="card-hourly-rate-yellow">
+                    <h3 className="text-center">Two Removalists</h3>
+                    <Image className="h-56" src={twoRemovalists} alt="best high-quality Melbourne removalists doing a same-day job"/>
+                    <h1 className="text-center">$145/hour</h1>
+                    <p className="text-center">Enjoy from a full hands-off removalist experience</p>
                 </div>
             </div>
         </section>

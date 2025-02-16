@@ -72,3 +72,19 @@ p {
   background: var(--secondary-color);
   transition: 0.2s;
 }
+
+.card-hourly-rate-blue {
+  width: 700px;
+  border-radius: 12px;
+  background-color: var(--primary-color-light);
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-hourly-rate-yellow {
+  width: 700px;
+  border-radius: 12px;
+  background-color: var(--secondary-color-light);
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
