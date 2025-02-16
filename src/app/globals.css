@@ -87,4 +87,13 @@ p {
   background-color: var(--secondary-color-light);
   padding: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  
 }
+
+@media (max-width: 640px) {
+  .card-hourly-rate-blue,
+  .card-hourly-rate-yellow {
+    width: 90%; /* or use a fixed smaller width, like 350px */
+  }
+}
+

@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export default function PricingSection() {
     return (
-        <section className="min-h-screen grid grid-flow-col gap-4">
+        <section className="min-h-screen grid lg:grid-flow-col gap-4">
             <div className="title-pricing col-span-2 flex flex-col justify-center">
                 <h1>Simple pricing</h1>
                 <h2 className="no-space-h3">No hidden fees. No surprises</h2>
                 <p>Pay only for the time we spend moving your belongings. Time starts and end at our depot in Blackburn South</p>
             </div>
-            <div className="pricing-cards flex flex-col gap-8">
+            <div className="pricing-cards flex flex-col justify-center gap-8">
                 <div className="card-hourly-rate-blue">
                     <h3 className="text-center">One Removalist</h3>
                     <Image className="h-56" src={oneRemovalist} alt="cheap house removalist packing a house in Melbourne"/>
